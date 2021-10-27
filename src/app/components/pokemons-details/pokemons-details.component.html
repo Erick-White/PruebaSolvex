@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="card" style="width: 18rem;">
+        <img [src]=" Pokess.sprites.front_default" class="card-img-top" alt="Pokemon Image">
+        <div class="card-body">
+            <h5 class="card-title">{{ Pokess.name}}</h5>
+            <p class="card-text">Type : {{ Pokess.types[0].type.name}}</p>
+            <p class="card-text">Height : {{ Pokess.height}}</p>
+            <p class="card-text">Weight : {{ Pokess.weight}}</p>
+            <p class="card-text">Atack Power : {{ Pokess.stats[1].base_stat}}</p>
+            <input type="button" class="btn btn-danger" (click)="download(Pokess.id)" value="Download Pokemons Details" />
+        </div>
+    </div>
+
+
+</div>
